@@ -12,10 +12,12 @@ A small piece of software based on .Net Framework, to modify the Steam Big Pictu
 ### 7.视频教程：还没有 <br>
 <br>
 ## 注意：
+
 1.查找Steam目录时，也可以右键打开桌面上的Steam图标属性，在“起始位置”一栏中将引号中的内容复制到输入框中，再点击修改也可。（ **不要复制引号！不要复制引号！不要复制引号！** ）<br>
 2.splash.webm时间长度**应当在25秒以内**，超出25秒的将不会被Steam大屏幕模式完整播放。<br>
 3.如果**无法**正常运行，请尝试到 C:\Users\Public\BPSC_stat 文件夹中删除dir.ini配置文件<br>
 4.应用仅在Windows11（10.0.22000.1574）系统上运行的【SteamAPI：020 ，构建时间：2013年2月13日，Steam组件版本：1676336721】版本Steam应用程序上验证可运行。旧版或更新的Steam应用程序**有可能**不能**使用本应用。<br>
+
 ### 5.The program currently supports simplified Chinese only.<br>
 
 ## 更多

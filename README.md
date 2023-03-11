@@ -24,5 +24,6 @@ A small piece of software based on .Net Framework, to modify the Steam Big Pictu
 
 Copyleft（ɔ） 2023 Tamarind （ https://space.bilibili.com/30523101/ ）<br>
 基于MIT协议。<br>
+有其他问题可以到 https://github.com/JustGallery/BPSC-for-Steam/issues 里反馈。
 
 ### 怎么总感觉自己做了一个数字垃圾（woshifeiwu）

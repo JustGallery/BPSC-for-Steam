@@ -8,9 +8,12 @@ A small piece of software based on .Net Framework, to modify the Steam Big Pictu
 3.把准备好的splash.webm复制到本应用程序的根目录；<br>
 4.点击修改；<br>
 5.点击打开Steam，启动大屏幕模式查看效果；<br>
-6.没别的了。<br>
+6.没别的了。
 ### 7.视频教程：还没有 <br>
-<br>
+
+
+
+
 ## 注意：
 
 1.查找Steam目录时，也可以右键打开桌面上的Steam图标属性，在“起始位置”一栏中将引号中的内容复制到输入框中，再点击修改也可。（ **不要复制引号！不要复制引号！不要复制引号！** ）<br>

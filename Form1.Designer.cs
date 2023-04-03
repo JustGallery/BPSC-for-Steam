@@ -28,168 +28,188 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ButtonFind = new System.Windows.Forms.Button();
-            this.ButtonSaveDir = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BtnExit = new System.Windows.Forms.Button();
-            this.BtnAbout = new System.Windows.Forms.Button();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.contNotibar = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolQuickApplySplash = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemShowApp = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolOpenSteam = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonStartSteam = new System.Windows.Forms.Button();
-            this.contNotibar.SuspendLayout();
-            this.SuspendLayout();
+            textBox1 = new TextBox();
+            ButtonFind = new Button();
+            ButtonSaveDir = new Button();
+            label1 = new Label();
+            BtnExit = new Button();
+            BtnAbout = new Button();
+            notifyIcon1 = new NotifyIcon(components);
+            contNotibar = new ContextMenuStrip(components);
+            toolQuickApplySplash = new ToolStripMenuItem();
+            menuItemShowApp = new ToolStripMenuItem();
+            toolOpenSteam = new ToolStripMenuItem();
+            toolAbout = new ToolStripMenuItem();
+            toolExit = new ToolStripMenuItem();
+            buttonStartSteam = new Button();
+            checkWakeOnBoot = new CheckBox();
+            checkAutoStartApp = new CheckBox();
+            contNotibar.SuspendLayout();
+            SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(448, 23);
-            this.textBox1.TabIndex = 0;
+            textBox1.Location = new Point(12, 52);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(448, 23);
+            textBox1.TabIndex = 0;
             // 
             // ButtonFind
             // 
-            this.ButtonFind.Location = new System.Drawing.Point(466, 46);
-            this.ButtonFind.Name = "ButtonFind";
-            this.ButtonFind.Size = new System.Drawing.Size(44, 23);
-            this.ButtonFind.TabIndex = 1;
-            this.ButtonFind.Text = "查找";
-            this.ButtonFind.UseVisualStyleBackColor = true;
-            this.ButtonFind.Click += new System.EventHandler(this.ButtonFind_Click);
+            ButtonFind.Location = new Point(466, 52);
+            ButtonFind.Name = "ButtonFind";
+            ButtonFind.Size = new Size(44, 26);
+            ButtonFind.TabIndex = 1;
+            ButtonFind.Text = "查找";
+            ButtonFind.UseVisualStyleBackColor = true;
+            ButtonFind.Click += ButtonFind_Click;
             // 
             // ButtonSaveDir
             // 
-            this.ButtonSaveDir.Location = new System.Drawing.Point(12, 85);
-            this.ButtonSaveDir.Name = "ButtonSaveDir";
-            this.ButtonSaveDir.Size = new System.Drawing.Size(498, 52);
-            this.ButtonSaveDir.TabIndex = 2;
-            this.ButtonSaveDir.Text = "点击这里保存路径（到 C:\\users\\public\\BPSC_stat）\r\n并修改大屏幕启动动画（ 在本应用根目录的splash.webm文件 ）";
-            this.ButtonSaveDir.UseVisualStyleBackColor = true;
-            this.ButtonSaveDir.Click += new System.EventHandler(this.ButtonSaveDir_Click);
+            ButtonSaveDir.Location = new Point(12, 96);
+            ButtonSaveDir.Name = "ButtonSaveDir";
+            ButtonSaveDir.Size = new Size(498, 59);
+            ButtonSaveDir.TabIndex = 2;
+            ButtonSaveDir.Text = "点击这里保存路径（到 C:\\users\\public\\BPSC_stat）\r\n并修改大屏幕启动动画（ 在本应用根目录的splash.webm文件 ）";
+            ButtonSaveDir.UseVisualStyleBackColor = true;
+            ButtonSaveDir.Click += ButtonSaveDir_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Steam安装文件夹根路径（不要给错路径，给错就是灾难）";
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(320, 17);
+            label1.TabIndex = 3;
+            label1.Text = "Steam安装文件夹根路径（不要给错路径，给错就是灾难）";
             // 
             // BtnExit
             // 
-            this.BtnExit.Location = new System.Drawing.Point(370, 172);
-            this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(142, 23);
-            this.BtnExit.TabIndex = 4;
-            this.BtnExit.Text = "点击这里彻底退出应用";
-            this.BtnExit.UseVisualStyleBackColor = true;
-            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            BtnExit.Location = new Point(370, 195);
+            BtnExit.Name = "BtnExit";
+            BtnExit.Size = new Size(142, 26);
+            BtnExit.TabIndex = 4;
+            BtnExit.Text = "点击这里彻底退出应用";
+            BtnExit.UseVisualStyleBackColor = true;
+            BtnExit.Click += BtnExit_Click;
             // 
             // BtnAbout
             // 
-            this.BtnAbout.Location = new System.Drawing.Point(370, 143);
-            this.BtnAbout.Name = "BtnAbout";
-            this.BtnAbout.Size = new System.Drawing.Size(142, 23);
-            this.BtnAbout.TabIndex = 5;
-            this.BtnAbout.Text = "关于此应用";
-            this.BtnAbout.UseVisualStyleBackColor = true;
-            this.BtnAbout.Click += new System.EventHandler(this.BtnAbout_Click);
+            BtnAbout.Location = new Point(370, 162);
+            BtnAbout.Name = "BtnAbout";
+            BtnAbout.Size = new Size(142, 26);
+            BtnAbout.TabIndex = 5;
+            BtnAbout.Text = "关于此应用";
+            BtnAbout.UseVisualStyleBackColor = true;
+            BtnAbout.Click += BtnAbout_Click;
             // 
             // notifyIcon1
             // 
-            this.notifyIcon1.ContextMenuStrip = this.contNotibar;
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            this.notifyIcon1.DoubleClick += new System.EventHandler(this.notifyIcon1_DoubleClick);
+            notifyIcon1.ContextMenuStrip = contNotibar;
+            notifyIcon1.Icon = (Icon)resources.GetObject("notifyIcon1.Icon");
+            notifyIcon1.Text = "BPSC\r\nEdit the bigpicture boot screen";
+            notifyIcon1.Visible = true;
+            notifyIcon1.DoubleClick += notifyIcon1_DoubleClick;
             // 
             // contNotibar
             // 
-            this.contNotibar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolQuickApplySplash,
-            this.menuItemShowApp,
-            this.toolOpenSteam,
-            this.toolAbout,
-            this.toolExit});
-            this.contNotibar.Name = "contNotibar";
-            this.contNotibar.Size = new System.Drawing.Size(327, 114);
+            contNotibar.Items.AddRange(new ToolStripItem[] { toolQuickApplySplash, menuItemShowApp, toolOpenSteam, toolAbout, toolExit });
+            contNotibar.Name = "contNotibar";
+            contNotibar.Size = new Size(329, 114);
             // 
             // toolQuickApplySplash
             // 
-            this.toolQuickApplySplash.Name = "toolQuickApplySplash";
-            this.toolQuickApplySplash.Size = new System.Drawing.Size(326, 22);
-            this.toolQuickApplySplash.Text = "一键修改大屏幕动画（第一次！不行！哒咩！）";
-            this.toolQuickApplySplash.Click += new System.EventHandler(this.toolQuickApplySplash_Click);
+            toolQuickApplySplash.Name = "toolQuickApplySplash";
+            toolQuickApplySplash.Size = new Size(328, 22);
+            toolQuickApplySplash.Text = "一键修改大屏幕动画（第一次！不行！哒咩！）";
+            toolQuickApplySplash.Click += toolQuickApplySplash_Click;
             // 
             // menuItemShowApp
             // 
-            this.menuItemShowApp.Name = "menuItemShowApp";
-            this.menuItemShowApp.Size = new System.Drawing.Size(326, 22);
-            this.menuItemShowApp.Text = "显示应用主界面";
-            this.menuItemShowApp.Click += new System.EventHandler(this.menuItemShowApp_Click);
+            menuItemShowApp.Name = "menuItemShowApp";
+            menuItemShowApp.Size = new Size(328, 22);
+            menuItemShowApp.Text = "显示应用主界面";
+            menuItemShowApp.Click += menuItemShowApp_Click;
             // 
             // toolOpenSteam
             // 
-            this.toolOpenSteam.Name = "toolOpenSteam";
-            this.toolOpenSteam.Size = new System.Drawing.Size(326, 22);
-            this.toolOpenSteam.Text = "打开Steam（跳过更新）";
-            this.toolOpenSteam.Click += new System.EventHandler(this.toolOpenSteam_Click);
+            toolOpenSteam.Name = "toolOpenSteam";
+            toolOpenSteam.Size = new Size(328, 22);
+            toolOpenSteam.Text = "打开Steam（跳过更新）";
+            toolOpenSteam.Click += toolOpenSteam_Click;
             // 
             // toolAbout
             // 
-            this.toolAbout.Name = "toolAbout";
-            this.toolAbout.Size = new System.Drawing.Size(326, 22);
-            this.toolAbout.Text = "关于此应用";
-            this.toolAbout.Click += new System.EventHandler(this.toolAbout_Click);
+            toolAbout.Name = "toolAbout";
+            toolAbout.Size = new Size(328, 22);
+            toolAbout.Text = "关于此应用";
+            toolAbout.Click += toolAbout_Click;
             // 
             // toolExit
             // 
-            this.toolExit.Name = "toolExit";
-            this.toolExit.Size = new System.Drawing.Size(326, 22);
-            this.toolExit.Text = "退出";
-            this.toolExit.Click += new System.EventHandler(this.toolExit_Click);
+            toolExit.Name = "toolExit";
+            toolExit.Size = new Size(328, 22);
+            toolExit.Text = "退出";
+            toolExit.Click += toolExit_Click;
             // 
             // buttonStartSteam
             // 
-            this.buttonStartSteam.Location = new System.Drawing.Point(12, 143);
-            this.buttonStartSteam.Name = "buttonStartSteam";
-            this.buttonStartSteam.Size = new System.Drawing.Size(352, 52);
-            this.buttonStartSteam.TabIndex = 6;
-            this.buttonStartSteam.Text = "点击这里启动Steam（跳过更新验证）";
-            this.buttonStartSteam.UseVisualStyleBackColor = true;
+            buttonStartSteam.Location = new Point(12, 162);
+            buttonStartSteam.Name = "buttonStartSteam";
+            buttonStartSteam.Size = new Size(352, 59);
+            buttonStartSteam.TabIndex = 6;
+            buttonStartSteam.Text = "点击这里启动Steam（跳过更新验证）";
+            buttonStartSteam.UseVisualStyleBackColor = true;
+            // 
+            // checkWakeOnBoot
+            // 
+            checkWakeOnBoot.AutoSize = true;
+            checkWakeOnBoot.Location = new Point(224, 240);
+            checkWakeOnBoot.Name = "checkWakeOnBoot";
+            checkWakeOnBoot.Size = new Size(87, 21);
+            checkWakeOnBoot.TabIndex = 7;
+            checkWakeOnBoot.Text = "开机自启动";
+            checkWakeOnBoot.UseVisualStyleBackColor = true;
+            checkWakeOnBoot.CheckedChanged += checkWakeOnBoot_CheckedChanged;
+            // 
+            // checkAutoStartApp
+            // 
+            checkAutoStartApp.AutoSize = true;
+            checkAutoStartApp.Location = new Point(339, 240);
+            checkAutoStartApp.Name = "checkAutoStartApp";
+            checkAutoStartApp.Size = new Size(171, 21);
+            checkAutoStartApp.TabIndex = 8;
+            checkAutoStartApp.Text = "打开应用时自动启动Steam";
+            checkAutoStartApp.UseVisualStyleBackColor = true;
+            checkAutoStartApp.CheckedChanged += checkAutoStartApp_CheckedChanged;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 213);
-            this.Controls.Add(this.buttonStartSteam);
-            this.Controls.Add(this.BtnAbout);
-            this.Controls.Add(this.BtnExit);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.ButtonSaveDir);
-            this.Controls.Add(this.ButtonFind);
-            this.Controls.Add(this.textBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Big Picture Changer";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.contNotibar.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(524, 268);
+            Controls.Add(checkAutoStartApp);
+            Controls.Add(checkWakeOnBoot);
+            Controls.Add(buttonStartSteam);
+            Controls.Add(BtnAbout);
+            Controls.Add(BtnExit);
+            Controls.Add(label1);
+            Controls.Add(ButtonSaveDir);
+            Controls.Add(ButtonFind);
+            Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Big Picture Changer";
+            FormClosing += Form1_FormClosing;
+            Load += Form1_Load;
+            contNotibar.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -208,5 +228,7 @@
         private ToolStripMenuItem toolExit;
         private ToolStripMenuItem toolQuickApplySplash;
         private Button buttonStartSteam;
+        private CheckBox checkWakeOnBoot;
+        private CheckBox checkAutoStartApp;
     }
 }
